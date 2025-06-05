@@ -5,7 +5,7 @@ from pydantic import BaseModel
 import mlflow
 import os 
 from dotenv import load_dotenv
-
+import prophet
 
 
 
@@ -21,8 +21,8 @@ class ProphetOccupationRequest(BaseModel):
 # Load environment variables from .env file
 
 # MLFLOW_URI should be set in the .env file that is in the root of the project
-load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env'))
-MLFLOW_URI=os.getenv("MLFLOW_URI")
+load_dotenv()
+MLFLOW_URI=os.getenv("MLFLOW_TRACKING_URI")
 
 
 app = FastAPI()
