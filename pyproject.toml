@@ -10,6 +10,7 @@ dependencies = [
     "joblib>=1.5.1",
     "mlflow>=2.22.0",
     "pandas>=2.3.0",
+    "prophet>=1.1.7",
     "pydantic>=2.11.5",
     "uvicorn>=0.34.3",
 ]
