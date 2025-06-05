@@ -34,7 +34,7 @@ mlflow.set_tracking_uri(str(MLFLOW_URI))
 
 @app.post("/predict/{model_name}")
 def predict(data: ProphetOccupationRequest, model_name:str):
-    model = mlflow.pyfunc.load_model(f"models:/{model_name}/1") 
+    model = mlflow.pyfunc.load_model(f"models:/{model_name}/2") 
     # model = joblib.load("../models/prophet_model.pkl")
 
     start_date = pd.to_datetime(data.start_date)

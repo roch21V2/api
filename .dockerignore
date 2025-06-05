@@ -1,5 +1,4 @@
 *__pycache__
 *README.md
-*.gitignore
 *.DS_Store
-
+.env
